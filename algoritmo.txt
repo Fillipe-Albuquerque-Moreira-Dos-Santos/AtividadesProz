@@ -1,15 +1,17 @@
 identificadores: nomeCompleto
 Tipo: Caractere
 Identificador: cpf
-Tipo: Constante
+Tipo: inteiro
 Identificador: rg
-Tipo: Constante
+Tipo: inteiro
 Identificador: altura 
 Tipo: Real
 Identificador: endereco 
 Tipo: Caractere
-Caractere nomeCompleto = “José Almeida da Silva”
-Const cpf = 12345678900
-Const rg = 9517530
-Real altura = 1,78
-Caractere endereco = “Rua A, 380 – Centro – Recife/PE
+
+ nomeCompleto = “José Almeida da Silva”
+ cpf = 12345678900
+ rg = 9517530
+ altura = 1,78
+ endereco = “Rua A, 380 – Centro – Recife/PE
+
