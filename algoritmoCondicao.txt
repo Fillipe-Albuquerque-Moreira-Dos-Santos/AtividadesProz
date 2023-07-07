@@ -4,9 +4,12 @@ pessoas,positivo:inteiro
 
 Inicio
 
+//Entrada de Dados
 Escreval("Bem vindos ao restaurante")
 Escreval ("Informe a quantidade de pessoas no seu grupo")
 leia (pessoas)
+
+//Processamento de dados
 se (pessoas >= 5) entao
 Escreval ("As pessoas serão alocadas no primeiro andar")
 senao
