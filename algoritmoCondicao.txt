@@ -1,0 +1,22 @@
+var:
+terreo, 1andar:caracter
+pessoas,positivo:inteiro
+
+Inicio
+
+Escreval("Bem vindos ao restaurante")
+Escreval ("Informe a quantidade de pessoas no seu grupo")
+leia (pessoas)
+se (pessoas >= 5) entao
+Escreval ("As pessoas serão alocadas no primeiro andar")
+senao
+Escreval ("Digite 1 caso você seja fumante ou tenha animais de estimação:")
+leia(positivo)
+se (positivo = 1) entao
+Escreval ("Você será alocado na área externa")
+senao 
+Escreval ("Você será alocado no terreo")
+fimse
+fimse
+
+FinalAlgoritmo
