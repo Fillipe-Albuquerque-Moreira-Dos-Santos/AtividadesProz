@@ -1,0 +1,20 @@
+Var
+   membro, nome_equipe: caractere
+   i: inteiro
+Inicio
+   Escreval("Bem-vindos ao torneio de e-sports")
+   
+   Para i de 1 ate 5 faca
+      Escreval("Informe seu nome:")
+      Leia(nome_membro)
+
+      Escreval("Informe o nome da sua equipe:")
+      Leia(nome_equipe)
+
+      Escreval("Olá ", nome_membro)
+      Escreval("Sua equipe é: ", nome_equipe)
+      Escreval("E a sua etiqueta é: ", nome_equipe, " - ", i)
+   FimPara
+   
+   Escreval("Etiquetas geradas com sucesso!")
+FimAlgoritmo
