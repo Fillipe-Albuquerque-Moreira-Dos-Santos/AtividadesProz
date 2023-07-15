@@ -1,17 +1,34 @@
-identificadores: nomeCompleto
-Tipo: Caractere
-Identificador: cpf
-Tipo: inteiro
-Identificador: rg
-Tipo: inteiro
-Identificador: altura 
-Tipo: Real
-Identificador: endereco 
-Tipo: Caractere
+import java.util.Scanner;
 
- nomeCompleto = “José Almeida da Silva”
- cpf = 12345678900
- rg = 9517530
- altura = 1,78
- endereco = “Rua A, 380 – Centro – Recife/PE
+public class CategoriaDeHabilitacao {
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Quantas rodas o veículo tem? ");
+        int quantidadeDeRodas = scanner.nextInt();
+
+        System.out.println("Qual é o peso bruto do veículo em quilogramas? ");
+        int pesoBruto = scanner.nextInt();
+
+        System.out.println("Quantas pessoas o veículo acomoda? ");
+        int quantidadeDePessoas = scanner.nextInt();
+
+        String categoria = "";
+        if (quantidadeDeRodas <= 3) {
+            categoria = "A";
+        } else if (quantidadeDeRodas == 4 && pesoBruto <= 3500) {
+            categoria = "B";
+        } else if (quantidadeDeRodas == 4 && pesoBruto > 3500 && pesoBruto <= 6000) {
+            categoria = "C";
+        } else if (quantidadeDeRodas == 4 && quantidadeDePessoas > 8) {
+            categoria = "D";
+        } else {
+            categoria = "E";
+        }
+
+        System.out.println("A categoria de habilitação do veículo é " + categoria);
+    }
+}
+
+// Amigos observação para quem for me avaliar eu fiz em Java porque venho estudando faz tempo nessa linguagem. Obrigado =)
