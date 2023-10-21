@@ -13,3 +13,9 @@ CREATE TABLE ALUNO (
     email VARCHAR(255),
     endereco VARCHAR(255)
 );
+
+INSERT INTO aluno (id_aluno, nome, email, endereco) VALUES (1, 'João Lucas', 'joao@email.com', 'Quadra 15, 123');
+INSERT INTO aluno (id_aluno, nome, email, endereco) VALUES (2, 'Jonas', 'Jonas@email.com', 'Setor industrial, 525');
+INSERT INTO aluno (id_aluno, nome, email, endereco) VALUES (3, 'Papapelguas', 'papa@email.com', 'Avenida das corridas, 123');
+
+SELECT * FROM aluno;
