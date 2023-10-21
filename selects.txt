@@ -1,0 +1,51 @@
+1. Exibir informações dos alunos aprovados (nota acima de 7,0):
+
+SELECT * FROM Alunos WHERE Nota > 7.0;
+-------------------------------------------------------------------------------
+2. Exibir informações dos alunos do primeiro ano com nota maior ou igual a 8,0:
+
+SELECT * FROM Alunos WHERE Ano = 1 AND Nota >= 8.0;
+
+-------------------------------------------------------------------------------
+3. Exibir apenas os nomes e notas dos alunos:
+
+SELECT Nome, Nota FROM Alunos;
+
+-------------------------------------------------------------------------------
+4. Criar uma tabela PROFESSOR com o primeiro e o último nome do professor:
+
+CREATE TABLE Professor AS
+SELECT SUBSTRING_INDEX(Nome, ' ', 1) AS PNome, SUBSTRING_INDEX(Nome, ' ', -1) AS UNome
+FROM Professores;
+
+-------------------------------------------------------------------------------
+5. Criar uma tabela ALUNO com o primeiro e o último nome de cada aluno:
+
+CREATE TABLE Aluno AS
+SELECT SUBSTRING_INDEX(Nome, ' ', 1) AS PNome, SUBSTRING_INDEX(Nome, ' ', -1) AS UNome
+FROM Alunos;
+
+-------------------------------------------------------------------------------
+6. Exibir o resultado da união entre a tabela ALUNO(PNome, UNome) e a tabela PROFESSOR:
+
+
+SELECT PNome, UNome FROM Aluno
+UNION
+SELECT PNome, UNome FROM Professor;
+
+-------------------------------------------------------------------------------
+7. Exibir o resultado da intersecção entre a tabela ALUNO(PNome, UNome) e a tabela PROFESSOR:
+
+
+SELECT PNome, UNome FROM Aluno
+INTERSECT
+SELECT PNome, UNome FROM Professor;
+
+-------------------------------------------------------------------------------
+8. Exibir o resultado da diferença entre a tabela ALUNO(PNome, UNome) e a tabela PROFESSOR:
+
+SELECT PNome, UNome FROM Aluno
+EXCEPT
+SELECT PNome, UNome FROM Professor;
+
+-------------------------------------------------------------------------------
