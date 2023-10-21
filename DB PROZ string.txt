@@ -1,0 +1,22 @@
+Entidade: Pessoa
+
+Atributos:
+
+Simples:
+
+Nome (string)
+Idade (inteiro)
+Gênero (string)
+Composto:
+
+Endereço:
+Rua (string)
+Número (inteiro)
+Cidade (string)
+CEP (string)
+Multivalorado (ou Atributo Repeitado):
+
+Números de Telefone (lista de strings)
+Telefone Residencial
+Telefone Comercial
+Telefone Celular
