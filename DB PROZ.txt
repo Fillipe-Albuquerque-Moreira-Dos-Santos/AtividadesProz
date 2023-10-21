@@ -1,0 +1,22 @@
+MySQL:
+
+Tipo: Banco de dados relacional.
+Linguagem de Consulta: SQL (Structured Query Language).
+Características Principais:
+Open-source e amplamente utilizado em aplicações web.
+Suporta transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade).
+Oferece armazenamento de dados em tabelas com esquemas predefinidos.
+Pode ser escalado horizontal e verticalmente.
+Compatível com várias linguagens de programação.
+
+
+MongoDB:
+
+Tipo: Banco de dados NoSQL (orientado a documentos).
+Linguagem de Consulta: MongoDB Query Language.
+Características Principais:
+Baseado em documentos (geralmente JSON ou BSON) em vez de tabelas.
+Esquema flexível, permitindo campos variáveis em documentos.
+Escalabilidade horizontal facilitada com replicação e sharding.
+Alta performance para operações de leitura e gravação.
+Ampla adoção em aplicações que requerem flexibilidade de esquema, como aplicações móveis e análise de big data.
