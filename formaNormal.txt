@@ -1,0 +1,43 @@
+Nesse caso precisamos dividir as tabelas
+
+Tabelas Pessoas
+
+| IDENTIFICADOR | NOME    |
+|--------------|---------|
+| 01           | Reinaldo|
+| 02           | Nestor  |
+| 03           | Raquel  |
+| 04           | Tati    |
+| 05           | Lia     |
+| 06           | Paty    |
+
+
+Tabela Telefones
+
+| ID_TELEFONE | IDENTIFICADOR | TELEFONE   |
+|------------|--------------|------------|
+| 1          | 01           | 680945-8723|
+| 2          | 01           | 688734-2343|
+| 3          | 01           | 682143-5469|
+| 4          | 01           | 925400-0043|
+| 7          | 02           | 874300-0000|
+| 8          | 04           | 415400-1232|
+| 9          | 04           | 414345-5555|
+| 10         | 05           | 981234-5678|
+| 11         | 06           | 712123-2425|
+
+
+tabela Endereço
+
+| ID_ENDERECO | IDENTIFICADOR | ENDERECO                        |
+|------------|--------------|---------------------------------|
+| 1          | 01           | Rua 10, 34, São Paulo, SP       |
+| 2          | 01           | 12345-000, Brasil               |
+| 3          | 02           | Avenida Bela, 45, Paulo Afonso, BA, 00034-000, Brasil |
+| 4          | 02           | Rua Cardoso, 100, Salvador, BA, 22222-000, Brasil  |
+| 5          | 02           | Bairro Canoa, 002, Rio de Janeiro, RJ, 34251-324, Brasil |
+| 6          | 03           |                                |
+
+
+
+Dessa forma alcançamos a 1FN.
