@@ -1,0 +1,46 @@
+CREATE DATABASE MinhaLoja;
+
+USE MinhaLoja;
+
+-- Tabela Clientes
+CREATE TABLE Clientes (
+    cliente_id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50),
+    email VARCHAR(100)
+);
+
+-- Tabela Compras
+CREATE TABLE Compras (
+    compra_id INT AUTO_INCREMENT PRIMARY KEY,
+    cliente_id INT,
+    produto VARCHAR(50),
+    quantidade INT,
+    data_compra DATE,
+    FOREIGN KEY (cliente_id) REFERENCES Clientes(cliente_id)
+);
+
+-- Inserir dados na tabela Clientes
+INSERT INTO Clientes (nome, email) VALUES
+    ('João', 'joao@email.com'),
+    ('Maria', 'maria@email.com'),
+    ('Pedro', 'pedro@email.com');
+
+-- Inserir dados na tabela Compras
+INSERT INTO Compras (cliente_id, produto, quantidade, data_compra) VALUES
+    (1, 'Laptop', 2, '2023-10-20'),
+    (2, 'Smartphone', 1, '2023-10-21'),
+    (1, 'Tablet', 3, '2023-10-22');
+
+
+Consulta para listar todas as compras com os nomes dos clientes:
+
+SELECT Clientes.nome, Compras.produto, Compras.data_compra
+FROM Clientes
+JOIN Compras ON Clientes.cliente_id = Compras.cliente_id;
+
+Consulta para listar o total de compras feitas por cada cliente:
+
+SELECT Clientes.nome, SUM(Compras.quantidade) AS total_compras
+FROM Clientes
+JOIN Compras ON Clientes.cliente_id = Compras.cliente_id
+GROUP BY Clientes.cliente_id, Clientes.nome;
