@@ -1,0 +1,25 @@
+CREATE DATABASE ExemploDB;
+
+USE ExemploDB;
+
+
+CREATE TABLE Clientes (
+    cliente_id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50),
+    email VARCHAR(100)
+);
+
+
+DELIMITER //
+
+CREATE TRIGGER atualizarTotalPedidos
+AFTER INSERT ON Pedidos
+FOR EACH ROW
+BEGIN
+    UPDATE Clientes
+    SET total_pedidos = total_pedidos + 1
+    WHERE cliente_id = NEW.cliente_id;
+END;
+//
+
+DELIMITER ;
