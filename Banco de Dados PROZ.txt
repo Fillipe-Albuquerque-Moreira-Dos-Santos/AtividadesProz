@@ -1,0 +1,39 @@
+Pilares da Segurança de Dados para um Banco de Dados
+
+Ao projetar um novo banco de dados para armazenar informações críticas de uma empresa de vendas, é essencial considerar os seguintes pilares da segurança de dados:
+
+Confidencialidade:
+
+Controle de Acesso: Implemente um sistema de controle de acesso rigoroso para garantir que apenas usuários autorizados tenham permissão para visualizar e modificar os dados. Use autenticação e autorização para controlar o acesso.
+
+Criptografia de Dados: Utilize a criptografia para proteger os dados armazenados no banco de dados. Isso garante que, mesmo se os dados forem comprometidos, eles permaneçam ilegíveis para pessoas não autorizadas.
+
+Integridade:
+
+Validação de Dados: Implemente regras de validação de dados para garantir que apenas informações corretas e confiáveis sejam inseridas no banco de dados. Isso ajuda a evitar dados corrompidos.
+
+Auditoria de Dados: Registre todas as operações no banco de dados, permitindo a rastreabilidade de alterações e a detecção de atividades suspeitas.
+
+Disponibilidade:
+
+Backups Regulares: Realize backups regulares dos dados para garantir a recuperação em caso de falhas no sistema ou incidentes de segurança.
+
+Redundância de Servidores: Implemente servidores redundantes e sistemas de failover para garantir a disponibilidade contínua do banco de dados.
+
+Autenticidade:
+
+Autenticação Forte: Utilize autenticação de dois fatores (2FA) ou autenticação forte para garantir que apenas pessoas autorizadas acessem o banco de dados.
+
+Registro de Usuários: Mantenha um registro de usuários autorizados e suas permissões, e revise esses registros periodicamente para garantir a autenticidade dos acessos.
+
+Responsabilidade:
+
+Políticas de Segurança: Estabeleça políticas de segurança de dados claras e comunique-as a todos os funcionários que interagem com o banco de dados.
+
+Treinamento de Funcionários: Forneça treinamento em segurança de dados para funcionários e conscientize-os sobre as melhores práticas.
+
+Resiliência:
+
+Plano de Recuperação de Desastres: Desenvolva um plano de recuperação de desastres para lidar com situações de emergência, como falhas de hardware, desastres naturais ou ciberataques.
+
+Testes de Segurança: Realize testes de penetração e avaliações regulares de segurança para identificar vulnerabilidades e corrigi-las.
