@@ -1,0 +1,19 @@
+DELIMITER //
+
+CREATE PROCEDURE LevantamentoDiario()
+BEGIN
+    SELECT
+        DataDaVenda,
+        SUM(Quantidade) AS QuantidadeTotal
+    FROM
+        vendas
+    GROUP BY
+        DataDaVenda;
+END;
+
+//
+
+DELIMITER ;
+
+
+CALL LevantamentoDiario();
