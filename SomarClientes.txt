@@ -1,0 +1,13 @@
+CREATE FUNCTION SomarClientesCadastrados(dataBusca DATE) RETURNS INT
+BEGIN
+    DECLARE totalClientes INT;
+    
+    SELECT COUNT(*) INTO totalClientes
+    FROM clientes
+    WHERE DATE(data_cadastro) = dataBusca;
+    
+    RETURN totalClientes;
+END;
+
+
+SELECT SomarClientesCadastrados('2023-06-10');
