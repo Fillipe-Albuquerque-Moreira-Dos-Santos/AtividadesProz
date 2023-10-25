@@ -1,0 +1,14 @@
+1 - Utilizar Senhas Complexas:
+
+Crie senhas complexas que incluam uma combinação de letras maiúsculas, letras minúsculas, números e caracteres especiais.
+Evite usar informações pessoais óbvias, como nomes, datas de nascimento ou palavras comuns que possam ser encontradas em dicionários.
+
+2 - Tamanho da Senha:
+
+Use senhas longas. Quanto mais longa a senha, mais difícil ela é de ser quebrada por ataques de força bruta.
+Recomenda-se que as senhas tenham pelo menos 12 caracteres.
+
+3 - Autenticação de Dois Fatores (2FA):
+
+Ative a autenticação de dois fatores sempre que possível. Isso requer um segundo método de verificação além da senha, como um código temporário enviado para o seu celular.
+2FA adiciona uma camada extra de segurança, mesmo se sua senha for comprometida.
